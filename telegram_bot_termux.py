@@ -11,7 +11,7 @@ import threading
 from datetime import datetime
 
 # ¡IMPORTANTE! Reemplaza 'TU_TOKEN_AQUI' con el token real de tu bot
-BOT_TOKEN = '7574229500:AAEe53P3WhMrOucuPc2HYZ4KmkFY1KCz-8w'
+BOT_TOKEN = 'TU_TOKEN_AQUI'
 
 # Crear instancia del bot
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -87,13 +87,14 @@ def send_info(message):
 # Comando /stop (solo para el creador del bot)
 @bot.message_handler(commands=['stop'])
 def stop_bot(message):
+    global bot_running
+    
     # Aquí puedes poner tu user_id para que solo tú puedas detener el bot
     # Para obtener tu user_id, envía cualquier mensaje y revisa los logs
     admin_ids = [message.from_user.id]  # Por ahora, cualquiera puede detenerlo
     
     if message.from_user.id in admin_ids:
         bot.reply_to(message, "🛑 Deteniendo el bot...")
-        global bot_running
         bot_running = False
         bot.stop_polling()
     else:
