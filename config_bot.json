@@ -4,5 +4,6 @@
   ],
   "allowed_groups": [],
   "auto_replies_enabled": true,
-  "bot_name": "Mi Bot Personalizado"
+  "bot_name": "Mi Bot Personalizado",
+  "respond_to_bots": true
 }
