@@ -10,7 +10,7 @@ import signal
 import sys
 
 # ¡IMPORTANTE! Reemplaza 'TU_TOKEN_AQUI' con el token real de tu bot
-BOT_TOKEN = '7574229500:AAEe53P3WhMrOucuPc2HYZ4KmkFY1KCz-8w'
+BOT_TOKEN = ''
 
 # Crear instancia del bot
 bot = telebot.TeleBot(BOT_TOKEN)

@@ -16,7 +16,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # TOKEN CONFIGURADO
-BOT_TOKEN = "7574229500:AAEe53P3WhMrOucuPc2HYZ4KmkFY1KCz-8w"
+BOT_TOKEN = ""
 
 # Directorio de descargas
 DOWNLOAD_DIR = os.path.expanduser("~/storage/downloads/telegram_bot")

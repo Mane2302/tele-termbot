@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # URL de la página que quieres scrapear
-url = 'https://coomer.su/onlyfans/user/redheadevelyn/post/1779649626'
+url = ''
 
 # Enviar una solicitud HTTP a la URL
 response = requests.get(url)
